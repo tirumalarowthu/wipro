@@ -5,11 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter,Route,Routes} from 'react-router-dom'
 import Homepage from './Homepage';
+import Wipro from './Wipro';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter basename='/wipro'> 
       <Routes> 
+        <Route path="/" element ={<Wipro/>}/>
         <Route path="/homepage" element={<Homepage/>} />
       </Routes>
 
